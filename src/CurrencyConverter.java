@@ -1,12 +1,7 @@
 import com.google.gson.*;
-import com.google.gson.annotations.SerializedName;
 
-import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStreamReader;
-import java.net.HttpURLConnection;
 import java.net.URI;
-import java.net.URL;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
@@ -95,9 +90,9 @@ public class CurrencyConverter {
 //        System.out.println(json);
             Gson gson = new Gson();
 
-            Titulo meuTitulo = gson.fromJson(json, Titulo.class);
+            CoinRate meuTitulo = gson.fromJson(json, CoinRate.class);
 
-            Nome meuNome = new Nome(meuTitulo);
+            Name meuNome = new Name(meuTitulo);
             System.out.println(meuNome);
 
 

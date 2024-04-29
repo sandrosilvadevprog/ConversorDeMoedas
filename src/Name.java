@@ -3,7 +3,7 @@ import com.google.gson.annotations.SerializedName;
 import java.text.DecimalFormat;
 
 
-public  class Nome {
+public  class Name {
     @SerializedName("base_code")
     private String dolar;
     @SerializedName("target_code")
@@ -11,14 +11,14 @@ public  class Nome {
     @SerializedName("conversion_rate")
     private Double cotacao;
 
-    public Nome(String dolar, String moedas, Double cotacao) {
+    public Name(String dolar, String moedas, Double cotacao) {
         this.dolar = dolar;
         this.moedas = moedas;
         this.cotacao = cotacao;
 
     }
 
-    public Nome(Titulo meuTitulo) {
+    public Name(CoinRate meuTitulo) {
         this.dolar = meuTitulo.base_code();
         this.moedas = meuTitulo.target_code();
         this.cotacao = Double.valueOf(meuTitulo.conversion_rate());
