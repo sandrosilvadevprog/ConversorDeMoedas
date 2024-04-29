@@ -11,7 +11,7 @@ import java.util.Scanner;
 public class CurrencyConverter {
     public static void main(String[] args) throws IOException, InterruptedException {
         try {
-            String apiKey = "ffbc55ace15edc5d6109da09";
+            String apiKey = "ffbc55ace10edc5d6109da09";
             Scanner scanner = new Scanner(System.in);
             String asterisks = "*".repeat(40);
             System.out.println("*" + asterisks);
